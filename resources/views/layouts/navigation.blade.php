@@ -1,12 +1,11 @@
 <nav class="bg-black border-b border-gray-800 text-white">
-    <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <img src="{{ asset('images/logo-kyg.png') }}" alt="KyG Logo" class="h-9 w-auto">
+                        <img src="{{ asset('images/logo-kyg.png') }}" alt="KyG Logo" class="h-8 w-auto">
                     </a>
                 </div>
 
@@ -25,7 +24,6 @@
                         <button
                             class="flex items-center text-sm font-medium text-white hover:text-gray-300 focus:outline-none transition duration-150 ease-in-out">
                             <div>{{ Auth::user()->name }}</div>
-
                             <div class="ml-1">
                                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20">
@@ -82,7 +80,6 @@
             </div>
 
             <div class="mt-3 space-y-1">
-                <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
                     <x-responsive-nav-link :href="route('logout')"
