@@ -20,7 +20,8 @@
         </div>
 
         <div class="text-center">
-            <img src="{{ asset('images/logo-kyg.png') }}" alt="KyG Logo" class="mx-auto mb-8 w-64">
+            <img src="{{ asset('images/logo-kyg.png') }}" alt="KyG Logo"
+                class="mx-auto mb-10 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl w-full">
             <h1 class="text-3xl font-bold mb-4">Bienvenido a KyG</h1>
             <p class="text-lg text-gray-400">Gestiona tus publicaciones de manera fácil y rápida</p>
         </div>
