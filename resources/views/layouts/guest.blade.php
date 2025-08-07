@@ -10,11 +10,17 @@
 
 <body class="font-sans antialiased bg-black text-white">
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
+
         <div>
+            @if (isset($logo))
             {{ $logo }}
+            @else
+            <img src="{{ asset('images/logo-kyg.png') }}" alt="KyG Logo" class="mx-auto h-16 sm:h-20 md:h-24">
+            @endif
         </div>
 
-        <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-dark-panel shadow-md overflow-hidden sm:rounded-lg">
+        <div
+            class="w-full sm:max-w-md mt-6 px-6 py-4 bg-black shadow-md overflow-hidden sm:rounded-lg border border-gray-800">
             {{ $slot }}
         </div>
     </div>
