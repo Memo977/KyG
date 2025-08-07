@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
+@layer utilities {
+  body, html {
+    background-color: #000 !important;
+    color: #f1f1f1;
+  }
+
+  .bg-dark-panel {
+    background-color: #1a1a1a !important;
+  }
+
+  .text-dark-text {
+    color: #f1f1f1 !important;
+  }
+}
 @tailwind utilities;

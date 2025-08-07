@@ -1,1 +1,1 @@
-<img src="{{ asset('images/logo-kyg.png') }}" alt="KyG Logo" class="h-8 w-auto">
+<img src="{{ asset('images/logo-kyg.png') }}" alt="KyG Logo" class="mx-auto h-16 sm:h-20 md:h-24 w-auto">
