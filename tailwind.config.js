@@ -1,7 +1,8 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
+import forms from '@tailwindcss/forms'/** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 
-/** @type {import('tailwindcss').Config} */
 export default {
     darkMode: 'class',
     content: [
@@ -14,6 +15,11 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                'dark-bg': '#0d0d0d',        // fondo principal
+                'dark-panel': '#1a1a1a',     // para nav, tarjetas, inputs
+                'dark-text': '#f1f1f1',      // texto principal
             },
         },
     },
